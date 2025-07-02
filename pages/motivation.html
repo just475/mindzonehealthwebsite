@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindZone | Motivation</title>
+  <link rel="stylesheet" href="/pages/motivation.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script>
+    function loadMotivation() {
+      const quotes = [
+        "Believe in yourself. You are braver than you think, stronger than you seem, and smarter than you know.",
+        "Every small step forward is still a step in the right direction.",
+        "You’ve survived 100% of your worst days. Keep going.",
+        "Don't be afraid to start over. This time, you're not starting from scratch — you're starting from experience.",
+        "Your mental health matters. You matter."
+      ];
+      document.getElementById("motivation-quote").textContent =
+        quotes[Math.floor(Math.random() * quotes.length)];
+    }
+
+    window.onload = loadMotivation;
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🧠 MindZone</div>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/pages/confess.html">Confess</a>
+      <a href="/pages/motivation.html">Motivation</a>
+      <a href="/pages/help.html">Help</a>
+      <a href="/pages/express.html">Express</a>
+    </nav>
+  </header>
+
+  <main class="motivation-page">
+    <section class="hero-section">
+      <img src="/images/sunrise motivation (2).jpg" alt="Sunrise Motivation" class="hero-img"/>
+      <div class="hero-text">
+        <h1> Find Your Motivation</h1>
+        <p>Let light in. Find hope. Keep moving forward.</p>
+      </div>
+    </section>
+
+    <section class="daily-motivation">
+      <h2> Daily Quote</h2>
+      <p id="motivation-quote">Loading...</p>
+    </section>
+
+    <section class="motivation-gallery">
+      <h2> Visual Encouragement</h2>
+      <div class="gallery">
+        <img src="/images/alexas_fotos-CMtX1zS-Xh4-unsplash.jpg" alt="Keep going"/>
+        <img src="/images/debby-hudson-PdJQTUarlqU-unsplash.jpg" alt="You matter"/>
+        <img src="/images/dlxmedia-hu-52AgXRhDaPI-unsplash.jpg" alt="Mountain hope"/>
+        <img src="/images/natalia-y-auNe2iiBOlA-unsplash.jpg" alt="Hope sunrise"/>
+      </div>
+    </section>
+
+    <section class="encouragement-note">
+      <h3> A Note for You</h3>
+      <p>
+        You’re not alone. Every day is a new chance to begin again. Speak kindly to yourself,
+        take one step at a time, and don’t be afraid to ask for help.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MindZone. Speak. Heal. Rise.</p>
+  </footer>
+</body>
+</html>

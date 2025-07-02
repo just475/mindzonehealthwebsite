@@ -1,0 +1,120 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4fbff;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  padding: 1rem 2rem;
+  color: white;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+
+.help-page {
+  font-family: 'Poppins', sans-serif;
+  color: #003049;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f8ff;
+}
+
+.emergency-support {
+  padding: 2rem;
+  background-color: #fff3f3;
+  border-left: 5px solid #d90429;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.hotlines {
+  list-style: none;
+  padding: 0;
+}
+
+.hotlines li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.get-guidance {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.resources-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.resource-card {
+  background-color: #f4fbff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.resource-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  background-color: #0077b6;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+.encouragement {
+  text-align: center;
+  padding: 2rem;
+  background-color: #eaf4f4;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+.encouragement blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #005f73;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

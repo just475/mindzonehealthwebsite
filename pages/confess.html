@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindZone | Confess</title>
+  <link rel="stylesheet" href="./confess.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const textarea = document.querySelector('textarea');
+      const value = textarea.value.trim();
+      if (value) {
+        const newConfess = document.createElement('div');
+        newConfess.className = 'confess';
+        newConfess.innerHTML = `
+          "${value}"
+          <img src="https://images.unsplash.com/photo-1504198458649-3128b932f49b" alt="Confession reflection">
+        `;
+        document.querySelector('.confessions').prepend(newConfess);
+        textarea.value = '';S
+        alert('Thanks for your confession. You’re not alone 💙');
+      }
+    }
+
+    function loadInspiration() {
+      const quotes = [
+        "Healing doesn't mean the damage never existed. It means the damage no longer controls our lives.",
+        "Be proud of how you’ve been handling things lately.",
+        "You matter. Your story matters. You’re not alone.",
+        "There’s hope, even when your brain tells you there isn’t."
+      ];
+      document.getElementById("daily-quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+    }
+
+    window.onload = loadInspiration;
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🧠 MindZone</div>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/pages/confess.html">Confess</a>
+      <a href="/pages/motivation.html">Motivation</a>
+      <a href="/pages/help.html">Help</a>
+      <a href="/pages/express.html">Express</a>
+    </nav>
+  </header>
+
+  <main class="confess-page">
+    <section class="confess-hero">
+      <img src="/images/panic.jpg" alt="Mental health calm" class="hero-img">
+      <div class="hero-text">
+        <h1>Confess Anonymously</h1>
+        <p>Share your thoughts safely. Your voice matters.</p>
+      </div>
+    </section>
+
+    <section class="daily-inspiration">
+      <h3>Daily Inspiration</h3>
+      <p id="daily-quote">Loading quote...</p>
+    </section>
+
+    <form class="confess-form" onsubmit="handleSubmit(event)">
+      <textarea placeholder="Type your confession here..." required></textarea>
+      <button type="submit"> Submit Confession</button>
+    </form>
+
+    <section class="confession-wall">
+      <h2>  Recent Confessions</h2>
+      <div class="confessions">
+        <div class="confess">
+          "I cry when no one's watching. I just want to feel heard."
+          <img src="/images/lonely.jpg" alt="Lonely person">
+        </div>
+        <div class="confess">
+          "Writing this helped me breathe. Thank you, MindZone."
+          <img src="/images/sky (1).jpg" alt="Peaceful sky">
+        </div>
+        <div class="confess">
+          "I’m still healing. One day at a time."
+          <img src="/images/steps.jpg" alt="Steps forward">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MindZone. Speak. Heal. Rise.</p>
+  </footer>
+</body>
+</html>

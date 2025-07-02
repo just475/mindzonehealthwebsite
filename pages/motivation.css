@@ -1,0 +1,174 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4fbff;
+  color: #333;
+}
+
+.navbar {
+  background-color: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-section .hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hero-text {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.daily-motivation {
+  background-color: #f0f9ff;
+  border-left: 5px solid #0077b6;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 700px;
+  font-style: italic;
+  color: #003049;
+}
+
+.motivation-gallery {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.encouragement-note {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #eaf4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #004d4d;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077b6;
+  color: white;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4fbff;
+  color: #333;
+}
+
+.navbar {
+  background-color: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 1rem;
+}
+
+.daily-inspiration {
+  background: #e0f7fa;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-left: 4px solid #00b4d8;
+  border-radius: 6px;
+  max-width: 700px;
+  font-style: italic;
+}
+
+.confess-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.confess-form textarea {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.confess-form button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background: #00b4d8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confession-wall {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.confess {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.confess img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077b6;
+  color: white;
+}
